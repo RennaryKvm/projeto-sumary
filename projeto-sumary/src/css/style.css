@@ -1,0 +1,134 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+  box-sizing: border-box;
+  width: 80%;
+  height: 80%;
+  background-color: #66ffff7a;
+  background-image: url(../images/pattern-background-desktop.svg);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.411);
+  position: relative;
+}
+
+.container {
+  width: 450px;
+  height: 650px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.img {
+  border-radius: 15px 15px 0px 0px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.6em;
+  font-weight: 900;
+}
+
+p {
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.plano {
+  background-color: rgba(160, 218, 252, 0.185);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 75px;
+  width: 400px;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.a-plan{
+  font-weight: 900;
+}
+
+.price{
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.411);
+}
+
+.music {
+  margin: 15px;
+}
+
+a{
+  position: absolute;
+  right: 50px;
+  bottom: 220px;
+  color: blue;
+  text-decoration: none;
+}
+
+.btn{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn01{
+  margin: 20px;
+padding: 15px;
+border: none;
+background-color: blue;
+color: white;
+font-size: 700;
+border-radius: 10px;
+box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.377);
+}
+
+.btn02{
+  margin: 20px;
+padding: 15px;
+border: none;
+background-color: white;
+}
+
+.assi{
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+@media (max-width: 650px){
+main{
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+}
+
+
